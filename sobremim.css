@@ -1,0 +1,214 @@
+body{
+    display: grid;
+    grid-template: 90px 1fr 70px / auto;
+}
+svg{
+    grid-column: 3 / 4;
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+.cabecalho {
+    grid-area: 1 / 1 / 2 / 2;
+    height: 90px;
+    display: inline-grid;
+    grid-template-rows: 90px;
+    grid-template-columns: 40% 50% 10%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.titulo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    width: 100px;
+    height: 90px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    margin-left: 25%;
+}
+.buho {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.titulo_texto {
+    width: 100px;
+    height: 70px;
+    font-family:  'Dancing Script', cursive; sans-serif;
+    font-size: 45px;
+    color: #8A2BE2;
+    font-weight: 400;
+    padding-left: 5px;
+}
+.menu {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 90px; 
+    display: flex;
+    flex-direction: row;
+}
+.elementos_menu {
+    text-decoration: none;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;  
+    height: 90px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.elementos_menu:hover{
+    font-weight: 600;
+}
+@media screen and (max-width:1024px){
+    .elementos_menu{
+        font-size: 15px;
+    }
+    .buho{
+        width: 55px;
+        height: 55px;
+    }
+    .titulo_texto{
+        font-size: 30px;
+        padding-top: 25px;
+        width: auto;
+    }
+}
+@media screen and (max-width:660px){
+    .menu{
+        display: none;
+    }
+    .cabecalho{
+        grid-template-columns: 50% 50%;
+    }
+    
+    .buho{
+        width: 40px;
+        height: 40px;
+    }
+    .titulo_texto{
+        font-size: 25px;
+        padding-top: 30px;
+    }
+    svg{
+        display: flex;
+        flex-direction: row;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        margin-left: 70px;
+        height: 90px;
+    }
+}
+main{
+    background-color: #fc94f5;
+    grid-area: 2 / 1 / 3 / 2;
+    display: grid;
+    grid-template-columns: 32.5% 35% 32.5%;
+    grid-template-rows: 50px 1fr;
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
+.container_foto{
+    display: flex;
+    flex-direction: column;
+    grid-area: 2 / 2 / 3 / 3;
+    height: auto;
+    width: auto;
+    align-items: center;
+}
+.foto{
+    grid-area: 2 / 2 / 3 / 3;
+    width: 300px;
+    height: 350px;
+    border-radius: 25%;
+    box-shadow: 7px 7px 7px 3px gray;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.foto:hover{
+    transition: 1s;
+    transform: scale(1.1);
+} 
+.estudos{
+    display: flex;
+    flex-direction: column;
+    grid-area: 2 / 1 / 3 / 2;
+    height: auto;
+    width: auto;
+    align-items: flex-end;
+    align-content: center;
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+.estudos_titulo{
+    grid-area: 2 / 1 / 3 / 2;
+    display: flex;
+    height: auto;
+    width: auto;
+    margin: 0;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.estudos_elemento1
+.estudos_elemento2
+.estudos_elemento3
+.estudos_elemento4
+{
+    display: flex;
+    height: auto;
+    width: auto;
+    margin-top: 15px;
+    text-align: right;
+    font-size: 15px;
+}
+.linguas{
+    display: flex;
+    flex-direction: column;
+    grid-area: 2 / 3 / 3 / 4;
+    height: auto;
+    width: auto;
+    margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+.linguas_titulo{
+    grid-area: 2 / 3 / 3 / 4;
+    display: flex;
+    height: auto;
+    width: auto;
+    margin-bottom: 20px;
+    margin: 0;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}    
+.linguas_elemento1
+.linguas_elemento2
+.linguas_elemento3
+{
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    height: 100%;
+    width: 100%;
+}
+
+#sobre{
+    font-weight: 600;
+}
+footer{
+    grid-area: 3 / 1 / 4 / 2;
+    height: auto;
+    text-align: center;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 25px;
+}
