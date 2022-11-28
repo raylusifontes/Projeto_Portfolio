@@ -41,7 +41,7 @@ svg{
 .titulo_texto {
     width: 100px;
     height: 70px;
-    font-family:  'Dancing Script', cursive; sans-serif;
+    font-family:  'Dancing Script', cursive, sans-serif;
     font-size: 45px;
 
     color: #8A2BE2;

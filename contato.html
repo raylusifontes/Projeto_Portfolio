@@ -31,16 +31,28 @@
         <div class="container_foto">
             <img class="foto" src="/recursos/eu.jpeg">
         </div>
-        <div class="contatos">
-            <p class="email">Email: sulyar@gmail.com</p>
-            <a class="linkedin" href="https://www.linkedin.com/in/raylusifontes" target="_blank">Linkedin</a>
-            <a class="facebook" href="https://www.facebook.com/raylu.sifontes/" target="_blank">Facebook</a>
-        </div>
+
+        
+        <form id="form" class="contatos">
+            <p id="texto">Você quer me contatar diretamente?</p>
+            <label>
+            Digite seu nome:
+                <input id="input-nome" type="text">
+            </label>    
+            <p id="nome-required"></p>
+            <label>
+            Digite seu email:
+                <input id="input-email" type="text">
+            </label>
+            <p id="email-required"></p>
+            <button id="botao" type="submit">Enviar dados</button>
+        </form>
+        
     </main>
     
     <footer>
         <p>&copy; Copyright 2022, desenhado por Raylú Sifontes.</p>
     </footer>
-
+<script src="contato.js"></script>
 </body>
 </html>
